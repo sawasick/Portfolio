@@ -151,7 +151,7 @@ $(function(){
 
         }
         else{
-            $(this).css('opacity',.3);
+            $(this).css('opacity', .3);
         }
     });
 });
@@ -171,12 +171,18 @@ $('.catBtn').on('click', function(){
         $('.Works_work_block_list_li').each(function(){
             if(i === 'all'){//allなら全て表示
                 $(this).animate({opacity: 1}, {duration: 300, easing:'swing'})
+                $(this).children('.work').addClass('work_maskParent')
+                $(this).find('.mOB').addClass('modalOpenBtn')
             }
             if(i !== 'all' && !$(this).hasClass(i)){//allではない&&選択したカテゴリではない
-                $(this).animate({opacity: .2}, {duration: 300, easing:'swing'})
+                $(this).animate({opacity: .3}, {duration: 300, easing:'swing'})
+                $(this).children('.work').removeClass('work_maskParent')
+                $(this).find('.mOB').removeClass('modalOpenBtn')
             }
             else{//それ以外(選択したカテゴリに含まれる)
                 $(this).animate({opacity: 1}, {duration: 300, easing:'swing'})
+                $(this).children('.work').addClass('work_maskParent')
+                $(this).find('.mOB').addClass('modalOpenBtn')
             }
         });
     });
