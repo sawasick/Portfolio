@@ -357,3 +357,22 @@ $(window).scroll(function (){
         }
     });
 });
+
+//スキルアイコンアニメーション
+$(window).scroll(function (){
+    var windowHeight = $(window).height();
+    var thisPos;
+
+    $('.skill_image-slide').each(function(){
+        thisPos = $(this).offset().top;
+        var scroll = $(window).scrollTop();
+
+        if (scroll >  thisPos - windowHeight + windowHeight / 2){
+            $(this).animate({
+                'height': '0px'
+            }, {duration: 1000, easing: 'easeInCubic'});
+        }
+        else{
+        }
+    });
+});

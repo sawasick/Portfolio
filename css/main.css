@@ -626,7 +626,6 @@ a{/* リンクの文字色 */
 }
 .About_skills_block_list img{
   width: 200px;
-  height: 200px;
 }
 .skills_table{
   display: flex;
@@ -637,6 +636,13 @@ a{/* リンクの文字色 */
   width: 200px;
   height: 200px;
   padding: 0;
+}
+.skill_image-main{
+  position: absolute;
+}
+.skill_image-slide{
+  position: absolute;
+  height: 200px;
 }
 /* ここまでAbout */
 
