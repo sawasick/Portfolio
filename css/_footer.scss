@@ -1,0 +1,27 @@
+@import "variables";
+
+.footer {
+	-webkit-background: linear-gradient(
+		90deg,
+		rgba($accentColor, 0.6),
+		16.65%,
+		rgba($mainColor, 0.6)
+	);
+	background: linear-gradient(
+		90deg,
+		rgba($accentColor, 0.6),
+		16.65%,
+		rgba($mainColor, 0.6)
+	);
+	width: auto;
+	height: 3vh;
+
+	p {
+		text-align: center;
+		font-size: 18px;
+		line-height: 3vh;
+		@media screen and (max-width: 480px) {
+			font-size: 15px;
+		}
+	}
+}

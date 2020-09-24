@@ -1,0 +1,122 @@
+@import "variables";
+
+// topTitle
+.topTitle {
+	position: fixed;
+	width: 10vw;
+	font-size: 18px;
+	text-align: center;
+	margin: 3vh 0 0 3%;
+	opacity: 0;
+	z-index: 99;
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+}
+// ハンバーガーメニュー
+.hamburger_bg-left {
+	position: fixed;
+	background-color: rgba(204, 204, 204, 0.7);
+	width: 70vw;
+	height: 100vh;
+	left: -70vw;
+	z-index: 300;
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
+}
+.hamburger_bg-right {
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 30vw;
+	height: 100vh;
+	right: -30vw;
+	z-index: 300;
+	@media screen and (max-width: 480px) {
+		width: 100vw;
+		right: -100vw;
+	}
+}
+.hamburgerOpen {
+	display: block;
+	position: fixed;
+	width: 50px;
+	height: 44px;
+	text-align: right;
+	right: 0;
+	margin: 3vh 5% 0 0;
+	cursor: pointer;
+	z-index: 400;
+	opacity: 0;
+	animation: fadeInTitleText 0.6s 1s forwards;
+}
+.hamburger_line {
+	display: block;
+	background-color: #000;
+	height: 2px;
+	position: absolute;
+	right: 0;
+	margin-left: auto;
+}
+.hamburger_line-top {
+	width: 100%;
+	top: 0;
+}
+.hamburger_line-middle {
+	width: 100%;
+	top: 40%;
+}
+.hamburger_line-bottom {
+	width: 100%;
+	top: 80%;
+}
+.hamburger_list {
+	display: none;
+	width: 20vw;
+	height: 100vh;
+	position: fixed;
+	font-size: 4vw;
+	right: 0;
+	margin: 3% 10% 0 0;
+	opacity: 0;
+	z-index: 400;
+	@media screen and (max-width: 480px) {
+		width: 80vw;
+		font-size: 10vw;
+	}
+
+	ul {
+		position: fixed;
+		width: 20vw;
+		height: 100vh;
+		top: 0;
+		margin: 3% 10% 0 1%;
+		padding: 0;
+	}
+	li {
+		position: fixed;
+		text-align: center;
+		list-style: none;
+		margin: 0 auto;
+	}
+}
+.hamburger_list--works {
+	bottom: 76%;
+}
+.hamburger_list--about {
+	bottom: 56%;
+}
+.hamburger_list--contact {
+	bottom: 36%;
+}
+.hamburgerCloseBtn {
+	display: none;
+	position: fixed;
+	font-size: 350%;
+	font-weight: lighter;
+	top: 2vh;
+	right: 5%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 400;
+}

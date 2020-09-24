@@ -1,0 +1,163 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+		"Hiragino Sans", Meiryo, sans-serif;
+	margin: 0 auto;
+	width: 100vw;
+}
+
+// リンクの文字の色
+a {
+	color: #000000;
+}
+// a要素のアンダーライン消す
+.link {
+	text-decoration: none;
+}
+// リンクをホバーした時
+.linkHover:hover {
+	opacity: 0.4;
+}
+// 各セクション
+section {
+	position: relative;
+	height: auto;
+}
+// セクションタイトル
+.title_bg {
+	background-color: $mainColor;
+	height: 16vh;
+	margin-top: 20%;
+}
+.title_bg-cover--LtoR,
+.title_bg-cover--RtoL {
+	background-color: #fff;
+	position: absolute;
+	width: 100vw;
+	height: 16vh;
+	top: 0;
+	left: 0;
+}
+.title_name {
+	color: #000;
+	position: relative;
+	font-size: 90px;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	top: calc(#{$title-tilt} - 54px);
+	margin: 0 auto;
+	opacity: 0;
+	z-index: 2;
+	@media screen and (max-width: 480px) {
+		font-size: 80px;
+		top: calc(#{$title-tilt} - 44px);
+	}
+}
+.title_underline {
+	background-color: $accentColor;
+	position: relative;
+	width: 300px;
+	height: 10px;
+	text-align: center;
+	top: calc(#{$title-tilt} - 54px);
+	bottom: 0;
+	left: 0;
+	margin: -30px auto 0 auto;
+	opacity: 0;
+	z-index: 1;
+	@media screen and (max-width: 480px) {
+		width: 280px;
+		top: calc(#{$title-tilt} - 40px);
+	}
+}
+
+// セクションタイトルアニメーション
+@keyframes fadeInLtoR {
+	100% {
+		left: 100%;
+	}
+}
+@keyframes fadeInRtoL {
+	100% {
+		left: -100%;
+	}
+}
+.fadeInLtoR {
+	animation: fadeInLtoR 0.5s ease-out forwards;
+}
+.fadeInRtoL {
+	animation: fadeInRtoL 0.5s ease-out forwards;
+}
+@keyframes fadeInTitle {
+	25% {
+		-webkit-background: linear-gradient(
+			90deg,
+			rgba($accentColor, 0.7),
+			16.65%,
+			rgba($mainColor, 0.7)
+		);
+		background: linear-gradient(
+			90deg,
+			rgba($accentColor, 0.7),
+			16.65%,
+			rgba($mainColor, 0.7)
+		);
+	}
+	50% {
+		-webkit-background: linear-gradient(
+			90deg,
+			rgba($accentColor, 0.8),
+			16.65%,
+			rgba($mainColor, 0.8)
+		);
+		background: linear-gradient(
+			90deg,
+			rgba($accentColor, 0.8),
+			16.65%,
+			rgba($mainColor, 0.8)
+		);
+	}
+	75% {
+		-webkit-background: linear-gradient(
+			90deg,
+			rgba($accentColor, 0.9),
+			16.65%,
+			rgba($mainColor, 0.9)
+		);
+		background: linear-gradient(
+			90deg,
+			rgba($accentColor, 0.9),
+			16.65%,
+			rgba($mainColor, 0.9)
+		);
+	}
+	100% {
+		-webkit-background: linear-gradient(
+			90deg,
+			rgba($accentColor, 1),
+			16.65%,
+			rgba($mainColor, 1)
+		);
+		background: linear-gradient(
+			90deg,
+			rgba($accentColor, 1),
+			16.65%,
+			rgba($mainColor, 1)
+		);
+	}
+}
+@keyframes fadeInTitleText {
+	100% {
+		opacity: 1;
+	}
+}
+.fadeInTitleText {
+	animation: fadeInTitleText 0.3s 0.5s forwards;
+}

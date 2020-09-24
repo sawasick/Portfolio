@@ -1,404 +1,508 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <meta charset="UTF-8">
-    <title>TERAZAWAMIZUKIポートフォリオ</title>
-    <!-- CSS読み込み -->
-    <link href="css/main.css" rel="stylesheet" type="text/css">
-    <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="css/slick.css" rel="stylesheet" type="text/css">
-    <!-- メディアクエリ -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>TERAZAWAMIZUKIポートフォリオ</title>
 
-    <body>
-        <header>
-            <!-- トップタイトル -->
-            <a href="">
-                <p class="topTitle linkHover">
-                    TERAZAWA<br>
-                    MIZUKI
-                </p>
-            </a>
-            <!-- ハンバーガーメニュー -->
-            <div class="hamburger_bg-left"></div>
-            <div class="hamburger_bg-right"></div>
-            <div class="hamburgerOpen">
-                <span class="hamburger_line-top hamburger_line"></span>
-                <span class="hamburger_line-middle hamburger_line"></span>
-                <span class="hamburger_line-bottom hamburger_line"></span>
-            </div>
-            <nav class="hamburger_list hamburgerClose">
-                <ul>
-                    <li class="hamburger_list-works"><a href="#Works" class="link">Works</a></li>
-                    <li class="hamburger_list-about"><a href="#About" class="link">About</a></li>
-                    <li class="hamburger_list-contact"><a href="#Contact" class="link">Contact</a></li>
-                </ul>
-            </nav>
-            <span class="hamburgerCloseBtn hamburgerClose">×</span>
-        </header>
+		<!-- CSS読み込み -->
+		<link href="css/main.css" rel="stylesheet" type="text/css" />
 
-        <main>
-            <section id="Top">
-                <div class="Top">
-                <img src="image/bg.png" alt="" class="Topsvg">
-                    <div class="TopCover"></div>
-                    <p class="Top_name">TERAZAWA MIZUKI</p>
-                    <p class="Top_portfolio">Portfolio</p>
-                </div>
-            </section>
+		<!-- メディアクエリ -->
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+	</head>
 
-            <section id="Works">
-                <div class="title_block title_block-Works">
-                    <div class="title_block-Cover-RtoL"></div>
-                    <h2 class="title_name title_name-Works">Works</h2>
-                    <div class="title_underline title_underline-Works"></div>
-                </div>
-                <div class="Works_category_block">
-                    <ul class="Works_category_block_list">
-                        <li><a href="" class="link catBtn all" id="all">All</a ></li>
-                        <li><a href="" class="link catBtn web" id="web">Web</a ></li>
-                        <li><a href="" class="link catBtn application" id="application">Application</a ></li>
-                        <li><a href="" class="link catBtn music" id="music">Music</a ></li>
-                    </ul>
-                </div>
-                <div class="Works_work_block">
-                    <ui class="Works_work_block_list">
-                        <!-- -----↓↓↓Gear Loveここから↓↓↓----- -->
-                        <li class="Works_work_block_list_li web music">
-                            <figure class="work work_maskParent">
-                                <img src="image/works/GearLove/GearLove.png" class="Works_work_block_list_image" alt="thumbnail">
-                                <a class="modalOpenBtn mOB" href="" data-target="modal_GearLove"></a>
-                                <div class="work_mask">
-                                    <figcaption class="work_caption">
-                                        <h4>
-                                            Gear Love
-                                        </h4>
-                                        <h5>
-                                            Web / Music<br>
-                                            リリックウェブサイト
-                                        </h5>
-                                    </figcaption>
-                                </div>
-                            </figure>
-                            <div id="modal_GearLove" class="modal js-modal">
-                                <div class="modal_content">
-                                    <div class="title_block-modal">
-                                        <h2 class="title_name-modal">Gear Love</h2>
-                                        <div class="title_underline-modal underline-modal-GearLove"></div>
-                                        <div class="title_category-modal">
-                                            <h3>Programming</h3>
-                                            <h3>Music</h3>
-                                        </div>
-                                    </div>
-                                            <div class="modal_detail">
-                                                <p class="modal_detail_desc">
-                                                    大学の学生主体による展覧会「卓展」の作品として制作。<br>
-                                                    遊びごころのある Webサイトをテーマにした卓と音楽で世界観を作る卓を兼卓し、音楽×Webの作品を作りました。
-                                                </p>
-                                                <p class="modal_detail_link">
-                                                    <a href="https://sawasick.github.io/Gear-Love/" target="blank">実際のサイトはこちら</a>
-                                                </p>
-                                                <ul class="modal_imgSlide">
-                                                    <li><img src="image/works/GearLove/GearLove1.png" alt="image01" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/GearLove/GearLove2.png" alt="image02" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/GearLove/GearLove3.png" alt="image03" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/GearLove/GearLove4.png" alt="image04" class="modal_imgSlide_image"></li>
-                                                </ul>
-                                                <div class="modal_detail_data">
-                                                    <div class="modal_detail_data_skill">
-                                                        <p class="modal_detail_data-name">使用技術 : </p>
-                                                        <p class="modal_detail_data-content">
-                                                            HTML5,CSS3,Javascript<br>
-                                                            illustrator,Photoshop,Logic Pro X
-                                                        </p>
-                                                    </div>
-                                                    <div class="modal_detail_data_period">
-                                                        <p class="modal_detail_data-name">制作期間 : </p>
-                                                        <p class="modal_detail_data-content">2019年 5月〜8月</p>
-                                                    </div>
-                                                </div>
-                                                <p class="modal_detail_desc">
-                                                    リリックウェブサイトをコンセプトに、楽曲の世界観をサウンドに加え、歌詞をwebによるビジュアルからも表現。<br>
-                                                    webを活かしたインタラクティブ要素によりUXによる遊びごころを体験できます。<br><br><br>
-                                                    ユーザーによるスクロールで左右の大きさが異なる歯車が噛み合いながら回転しページが進んでいきます。<br>
-                                                    また曲に合わせた自動アニメーションも実装しました。
-                                                </p>
-                                    <a class="modalCloseBtn linkHover" href="">×</a>
-                                </div><!--modal_inner-->
-                            </div><!--modal-->
-                        </li>
-                        <!-- -----↑↑↑Gear Loveここまで↑↑↑----- -->
-                         <!-- -----↓↓↓Pileここから↓↓↓----- -->
-                         <li class="Works_work_block_list_li application">
-                            <figure class="work work_maskParent">
-                                <img src="image/works/Pile/Pile.png" class="Works_work_block_list_image" alt="thumbnail">
-                                <a class="modalOpenBtn mOB" href="" data-target="modal_Pile"></a>
-                                <div class="work_mask">
-                                    <figcaption class="work_caption">
-                                        <h4>
-                                            Pile
-                                        </h4>
-                                        <h5>
-                                            Application<br>
-                                            メンタルヘルスを守る
-                                        </h5>
-                                    </figcaption>
-                                </div>
-                            </figure>
-                            <div id="modal_Pile" class="modal js-modal">
-                                <div class="modal_content">
-                                    <div class="title_block-modal">
-                                        <h2 class="title_name-modal">Pile</h2>
-                                        <div class="title_underline-modal underline-modal-Pile"></div>
-                                        <div class="title_category-modal">
-                                            <h3>Application</h3>
-                                        </div>
-                                    </div>
-                                            <div class="modal_detail">
-                                                <p class="modal_detail_desc">
-                                                    大学の実習の授業で制作。<br>
-                                                    日常生活における「まもる」という行為をテーマにしたユーザーインターフェイスデザインを制作しました。
-                                                </p>
-                                                <p class="modal_detail_link">
-                                                    <!-- <a href="" target="blank">特設サイトはこちら</a> -->
-                                                </p>
-                                                <ul class="modal_imgSlide">
-                                                    <li><img src="image/works/Pile/Pile1.png" alt="image01" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/Pile/Pile2.png" alt="image02" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/Pile/Pile3.png" alt="image03" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/Pile/Pile4.png" alt="image04" class="modal_imgSlide_image"></li>
-                                                </ul>
-                                                <div class="modal_detail_data">
-                                                    <div class="modal_detail_data_skill">
-                                                        <p class="modal_detail_data-name">使用技術 : </p>
-                                                        <p class="modal_detail_data-content">
-                                                            illustrator,Photoshop,Xd
-                                                        </p>
-                                                    </div>
-                                                    <div class="modal_detail_data_period">
-                                                        <p class="modal_detail_data-name">制作期間 : </p>
-                                                        <p class="modal_detail_data-content">2019年 6月〜8月</p>
-                                                    </div>
-                                                </div>
-                                                <p class="modal_detail_desc">
-                                                    小さい目標の達成を積み重ねることで、達成感や満足感を満たしユーザーのメンタルヘルスの低下をまもるというゴールのアプリケーションモックを制作しました。<br>
-                                                    目標の大小ではなく、目標の積み重ねによる良い気分の維持、向上を目指しPileと名付けました。<br><br><br>
-                                                    シンプルで使いやすいUIの設計、ユーザーに満足感を与えるインタラクティブデザインに重点を置きました。<br>
-                                                    技術を身につけて動作するアプリケーションとして実装させたいです。
-                                                </p>
-                                    <a class="modalCloseBtn linkHover" href="">×</a>
-                                </div><!--modal_inner-->
-                            </div><!--modal-->
-                        </li>
-                        <!-- -----↑↑↑Pileここまで↑↑↑----- -->
-                        <!-- -----↓↓↓Hamburger_nomnomここから↓↓↓----- -->
-                         <li class="Works_work_block_list_li web application">
-                            <figure class="work work_maskParent">
-                                <img src="image/works/Hamburger_nomnom/Hamburger_nomnom.png" class="Works_work_block_list_image" alt="thumbnail">
-                                <a class="modalOpenBtn mOB" href="" data-target="modal_Hamburger_nomnom"></a>
-                                <div class="work_mask">
-                                    <figcaption class="work_caption">
-                                        <h4>
-                                            Hamburger nomnom
-                                        </h4>
-                                        <h5>
-                                            Web / Application<br>
-                                            ハンバーガーを完成させよう
-                                        </h5>
-                                    </figcaption>
-                                </div>
-                            </figure>
-                            <div id="modal_Hamburger_nomnom" class="modal js-modal">
-                                <div class="modal_content">
-                                    <div class="title_block-modal">
-                                        <h2 class="title_name-modal">Hamburger nomnom</h2>
-                                        <div class="title_underline-modal underline-modal-Hamburger_nomnom"></div>
-                                        <div class="title_category-modal">
-                                            <h3>Web</h3>
-                                            <h3>Application</h3>
-                                        </div>
-                                    </div>
-                                            <div class="modal_detail">
-                                                <p class="modal_detail_desc">
-                                                    大学の学祭の個人制作として制作。<br>
-                                                    nomnom(ナムナム)というファストフードをイメージした学祭テーマに合ったゲームを作りました。
-                                                </p>
-                                                <p class="modal_detail_link">
-                                                    <a href="https://sawasick.github.io/nomnom/" target="blank">実際のサイトはこちら</a>
-                                                </p>
-                                                <ul class="modal_imgSlide">
-                                                    <li><img src="image/works/Hamburger_nomnom/Hamburger_nomnom1.png" alt="image01" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/Hamburger_nomnom/Hamburger_nomnom2.png" alt="image02" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/Hamburger_nomnom/Hamburger_nomnom3.png" alt="image03" class="modal_imgSlide_image"></li>
-                                                    <li><img src="image/works/Hamburger_nomnom/Hamburger_nomnom4.png" alt="image04" class="modal_imgSlide_image"></li>
-                                                </ul>
-                                                <div class="modal_detail_data">
-                                                    <div class="modal_detail_data_skill">
-                                                        <p class="modal_detail_data-name">使用技術 : </p>
-                                                        <p class="modal_detail_data-content">
-                                                            HTML5,CSS3,Javascript<br>
-                                                            Processing,illustrator
-                                                        </p>
-                                                    </div>
-                                                    <div class="modal_detail_data_period">
-                                                        <p class="modal_detail_data-name">制作期間 : </p>
-                                                        <p class="modal_detail_data-content">2019年 10月(3日間)</p>
-                                                    </div>
-                                                </div>
-                                                <p class="modal_detail_desc">
-                                                    上から降ってくるハンバーガーの素材をタイミングよく落として綺麗に完成させるゲームです。<br><br><br>
-                                                    ProccesingベースでコーディングしたものをProcessing.jsを用いてweb上で動かしました。<br>
-                                                    webアプリにすることでクロスプラットフォームにしました。
-                                                </p>
-                                    <a class="modalCloseBtn linkHover" href="">×</a>
-                                </div><!--modal_inner-->
-                            </div><!--modal-->
-                        </li>
-                        <!-- -----↑↑↑Hamburger_nomnomここまで↑↑↑----- -->
-                    </ui>
-                </div>
-            </section>
+	<body>
+		<header>
+			<!-- トップタイトル -->
+			<a href="">
+				<p class="topTitle linkHover">
+					TERAZAWA<br />
+					MIZUKI
+				</p>
+			</a>
 
-            <section id="About">
-                <div class="title_block title_block-About">
-                    <div class="title_block-Cover-LtoR"></div>
-                    <h2 class="title_name title_name-About">About</h2>
-                    <div class="title_underline title_underline-About"></div>
-                </div>
-                <h3 class="About_profile">Profile</h3>
-                <div class="About_profile_block">
-                    <img class="About_profile_block_image" src="./image/profile.jpg" alt="profile">
-                    <div class="About_profile_block_detail">
-                        <p class="About_profile_block_detail_name">寺澤瑞基</p>
-                        <p class="About_profile_block_detail_info">
-                            1999年4月25日生まれ、名古屋在住<br>
-                            名古屋市立大学 芸術工学部<br>
-                            情報環境デザイン学科 3年<br>
-                            Mac歴8年、Windows歴一応7年<br>
-                            割とApple信者<br>
-                            最近の趣味はイラレでトレース
-                        </p>
-                    </div>
-                </div>
-                <div class="About_skills_block">
-                    <h3>Skills</h3>
-                    <table class="About_skills_block_list">
-                        <tr class="About_skills_block_list_tool skills_table">
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/illustrator-bottom.png" alt="illustrator" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/illustrator-top.png" alt="illustrator" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/photoshop-bottom.png" alt="photoshop" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/photoshop-top.png" alt="photoshop" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/xd-bottom.png" alt="xd" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/xd-top.png" alt="xd" class="skill_image-main">
-                            </td>
-                        </tr>
-                        <tr class="About_skills_block_list_ProgrammingLanguage skills_table">
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/python-bottom.png" alt="python" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/python-top.png" alt="python" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/java-bottom.png" alt="java" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/java-top.png" alt="java" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/processing-bottom.png" alt="processing" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/processing-top.png" alt="processing" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/unity-bottom.png" alt="unity" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/unity-top.png" alt="unity" class="skill_image-main">
-                            </td>
-                        </tr>
-                        <tr class="About_skills_block_list_WebLanguage skills_table">
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/html5-bottom.png" alt="html5" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/html5-top.png" alt="html5" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/css3-bottom.png" alt="css3" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/css3-top.png" alt="css3" class="skill_image-main">
-                            </td>
-                            <td class="About_skills_block_list_icon">
-                                <img src="image/skills/javascript-bottom.png" alt="javascript" class="skill_image-main">
-                                <img src="image/skills/skill-icon-middle.png" alt="partition" class="skill_image-slide">
-                                <img src="image/skills/javascript-top.png" alt="javascript" class="skill_image-main">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
+			<!-- ハンバーガーメニュー -->
+			<div class="hamburger_bg-left"></div>
+			<div class="hamburger_bg-right"></div>
+			<div class="hamburgerOpen">
+				<span class="hamburger_line-top hamburger_line"></span>
+				<span class="hamburger_line-middle hamburger_line"></span>
+				<span class="hamburger_line-bottom hamburger_line"></span>
+			</div>
+			<nav class="hamburger_list hamburgerClose">
+				<ul>
+					<li class="hamburger_list--works">
+						<a href="#Works" class="link">Works</a>
+					</li>
+					<li class="hamburger_list--about">
+						<a href="#About" class="link">About</a>
+					</li>
+					<li class="hamburger_list--contact">
+						<a href="#Contact" class="link">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<span class="hamburgerCloseBtn hamburgerClose">×</span>
+		</header>
 
-            <section id="Contact">
-                <div class="title_block title_block-Contact">
-                    <div class="title_block-Cover-RtoL"></div>
-                    <h2 class="title_name title_name-Contact">Contact</h2>
-                    <div class="title_underline title_underline-Contact"></div>
-                </div>
-                <h3 class="Contact_text">お気軽にご連絡ください</h3>
-                <table class="Contact_list">
-                    <!-- mail -->
-                    <tr class="Contact_list_mail contact_table">
-                        <td class="Contact_list_icon">
-                                <img src="image/contact/mail.png" alt="mail">
-                        </td>
-                        <td>
-                            <a href="mailto:sawasick3049@gmail.com" class="link">
-                                <p class="contact_list_address linkHover">sawasick3049@gmail.com</p>
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- instagram -->
-                    <tr class="Contact_list_instagram contact_table">
-                        <td class="Contact_list_icon">
-                                <img src="image/contact/instagram.png" alt="instagram">
-                        </td>
-                        <td>
-                            <a href="https://www.instagram.com/sawasick.s/" target="blank" class="link">
-                                <p class="contact_list_address linkHover">@sawasick.s</p>
-                            </a>
-                        </td>
-                    </tr>
-                    <!-- twitter -->
-                    <tr class="Contact_list_twitter contact_table">
-                        <td class="Contact_list_icon">
-                                <img src="image/contact/twitter.png" alt="twitter">
-                        </td>
-                        <td>
-                            <a href="https://twitter.com/sawasick_s" target="blank" class="link">
-                                <p class="contact_list_address linkHover">@sawasick_s</p>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </section>
-        </main>
+		<main>
+			<section id="Top">
+				<div class="Top_wrap">
+					<img src="image/bg.png" alt="bg" />
+					<div class="TopCover"></div>
+					<p class="Top_name">TERAZAWA MIZUKI</p>
+					<p class="Top_portfolio">Portfolio</p>
+				</div>
+			</section>
 
-        <footer>
-            <div class="footer">
-                <p>@2020 TERAZAWA MIZUKI Portfolio</p>
-            </div>
-        </footer>
+			<section id="Works">
+				<div class="title_bg title_bg--Works">
+					<div class="title_bg-cover--RtoL"></div>
+					<h2 class="title_name title_name--Works">Works</h2>
+					<div class="title_underline title_underline--Works"></div>
+				</div>
+				<div class="Works_category">
+					<ul>
+						<li><a href="" class="link catBtn all" id="all">All</a></li>
+						<li><a href="" class="link catBtn web" id="web">Web</a></li>
+						<li>
+							<a href="" class="link catBtn application" id="application"
+								>Application</a
+							>
+						</li>
+						<li><a href="" class="link catBtn music" id="music">Music</a></li>
+					</ul>
+				</div>
+				<div class="Works_work">
+					<ul>
+						<!-- -----↓↓↓BalloonMailここから↓↓↓----- -->
+						<li class="Works_work-list web application">
+							<figure class="choice Works_work_tmb">
+								<img
+									src="image/works/BalloonMail/BalloonMail.svg"
+									alt="thumbnail"
+								/>
+								<a href="work/BalloonMail.html" target="blank"></a>
+								<div class="Works_work_tmb_mask">
+									<figcaption>
+										<h4>Balloon Mail</h4>
+										<h5>
+											Web / Application<br />
+											思いをバルーンに乗せて飛ばす
+										</h5>
+									</figcaption>
+								</div>
+							</figure>
+						</li>
+						<!-- -----↑↑↑BalloonMailここまで↑↑↑----- -->
+						<!-- -----↓↓↓Gear Loveここから↓↓↓----- -->
+						<li class="Works_work-list web music">
+							<figure class="choice Works_work_tmb">
+								<img src="image/works/GearLove/GearLove.png" alt="thumbnail" />
+								<a href="work/GearLove.html" target="blank"></a>
+								<div class="Works_work_tmb_mask">
+									<figcaption>
+										<h4>Gear Love</h4>
+										<h5>
+											Web / Music<br />
+											リリックウェブサイト
+										</h5>
+									</figcaption>
+								</div>
+							</figure>
+						</li>
+						<!-- -----↑↑↑Gear Loveここまで↑↑↑----- -->
+						<!-- -----↓↓↓Pileここから↓↓↓----- -->
+						<li class="Works_work-list application">
+							<figure class="choice Works_work_tmb">
+								<img src="image/works/Pile/Pile.png" alt="thumbnail" />
+								<a href="work/Pile.html" target="blank"></a>
+								<div class="Works_work_tmb_mask">
+									<figcaption>
+										<h4>Pile</h4>
+										<h5>
+											Application<br />
+											メンタルヘルスを守る
+										</h5>
+									</figcaption>
+								</div>
+							</figure>
+						</li>
+						<!-- -----↑↑↑Pileここまで↑↑↑----- -->
+						<!-- -----↓↓↓Hamburger_nomnomここから↓↓↓----- -->
+						<li class="Works_work-list web application">
+							<figure class="choice Works_work_tmb">
+								<img
+									src="image/works/Hamburger_nomnom/Hamburger_nomnom.png"
+									alt="thumbnail"
+								/>
+								<a href="work/Hamburger_nomnom.html" target="blank"></a>
+								<div class="Works_work_tmb_mask">
+									<figcaption>
+										<h4>Hamburger nomnom</h4>
+										<h5>
+											Web / Application<br />
+											ハンバーガーを完成させよう
+										</h5>
+									</figcaption>
+								</div>
+							</figure>
+						</li>
+						<!-- -----↑↑↑Hamburger_nomnomここまで↑↑↑----- -->
+					</ul>
+				</div>
+			</section>
 
-    <!-- -----script読み込み----- -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer="defer"></script>
-    <script type="text/javascript" src="js/slick.min.js" defer="defer"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js" defer="defer"></script>
-    <script type="text/javascript" src="js/main.js" defer="defer"></script>
-  </body>
+			<section id="About">
+				<div class="title_bg title_bg--About">
+					<div class="title_bg-cover--LtoR"></div>
+					<h2 class="title_name title_name--About">About</h2>
+					<div class="title_underline title_underline--About"></div>
+				</div>
+
+				<h3 class="About_profile">Profile</h3>
+				<div class="About_profile_wrap">
+					<img src="./image/profile.jpg" alt="profile" />
+					<div class="About_profile_detail">
+						<p class="About_profile_detail_name">寺澤瑞基</p>
+						<p class="About_profile_detail_info">
+							1999年4月25日生まれ、名古屋在住<br />
+							名古屋市立大学 芸術工学部<br />
+							情報環境デザイン学科 3年<br />
+							Mac歴8年、Windows歴一応7年<br />
+							割とApple信者<br />
+							最近の趣味はイラレでトレース
+						</p>
+					</div>
+				</div>
+				<div class="About_skills_wrap">
+					<h3>Skills</h3>
+					<table class="About_skills_list">
+						<!-- Adobe -->
+						<tr>
+							<td>
+								<img
+									src="image/skills/illustrator-bottom.png"
+									alt="illustrator"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/illustrator-top.png"
+									alt="illustrator"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/photoshop-bottom.png"
+									alt="photoshop"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/photoshop-top.png"
+									alt="photoshop"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/xd-bottom.png"
+									alt="xd"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/xd-top.png"
+									alt="xd"
+									class="skill_image-main"
+								/>
+							</td>
+						</tr>
+						<!-- Programming Language -->
+						<tr>
+							<td>
+								<img
+									src="image/skills/python-bottom.png"
+									alt="python"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/python-top.png"
+									alt="python"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/java-bottom.png"
+									alt="java"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/java-top.png"
+									alt="java"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/processing-bottom.png"
+									alt="processing"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/processing-top.png"
+									alt="processing"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/unity-bottom.png"
+									alt="unity"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/unity-top.png"
+									alt="unity"
+									class="skill_image-main"
+								/>
+							</td>
+						</tr>
+						<!-- Web Language -->
+						<tr>
+							<td>
+								<img
+									src="image/skills/html5-bottom.png"
+									alt="html5"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/html5-top.png"
+									alt="html5"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/css3-bottom.png"
+									alt="css3"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/css3-top.png"
+									alt="css3"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/javascript-bottom.png"
+									alt="javascript"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/javascript-top.png"
+									alt="javascript"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/jquery-bottom.png"
+									alt="jquery"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/jquery-top.png"
+									alt="jquery"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/sass-bottom.png"
+									alt="sass"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/sass-top.png"
+									alt="sass"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/rails-bottom.png"
+									alt="rails"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/rails-top.png"
+									alt="rails"
+									class="skill_image-main"
+								/>
+							</td>
+							<td>
+								<img
+									src="image/skills/github-bottom.png"
+									alt="github"
+									class="skill_image-main"
+								/>
+								<img
+									src="image/skills/skill-icon-middle.png"
+									alt="partition"
+									class="skill_image-slide"
+								/>
+								<img
+									src="image/skills/github-top.png"
+									alt="github"
+									class="skill_image-main"
+								/>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<section id="Contact">
+				<div class="title_bg title_bg--Contact">
+					<div class="title_bg-cover--RtoL"></div>
+					<h2 class="title_name title_name--Contact">Contact</h2>
+					<div class="title_underline title_underline--Contact"></div>
+				</div>
+				<h3 class="Contact_text">お気軽にご連絡ください</h3>
+				<table class="Contact_list">
+					<!-- mail -->
+					<tr class="Contact_list_mail contact_table">
+						<td class="Contact_list_icon">
+							<img src="image/contact/mail.png" alt="mail" />
+						</td>
+						<td>
+							<a href="mailto:sawasick3049@gmail.com" class="link">
+								<p class="contact_list_address linkHover">
+									sawasick3049@gmail.com
+								</p>
+							</a>
+						</td>
+					</tr>
+					<!-- instagram -->
+					<tr class="Contact_list_instagram contact_table">
+						<td class="Contact_list_icon">
+							<img src="image/contact/instagram.png" alt="instagram" />
+						</td>
+						<td>
+							<a
+								href="https://www.instagram.com/sawasick.s/"
+								target="blank"
+								class="link"
+							>
+								<p class="contact_list_address linkHover">@sawasick.s</p>
+							</a>
+						</td>
+					</tr>
+					<!-- twitter -->
+					<tr class="Contact_list_twitter contact_table">
+						<td class="Contact_list_icon">
+							<img src="image/contact/twitter.png" alt="twitter" />
+						</td>
+						<td>
+							<a
+								href="https://twitter.com/sawasick_s"
+								target="blank"
+								class="link"
+							>
+								<p class="contact_list_address linkHover">@sawasick_s</p>
+							</a>
+						</td>
+					</tr>
+				</table>
+			</section>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<p>@2020 TERAZAWA MIZUKI Portfolio</p>
+			</div>
+		</footer>
+
+		<!-- -----script読み込み----- -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			defer="defer"
+		></script>
+		<script
+			type="text/javascript"
+			src="js/jquery.easing.1.3.js"
+			defer="defer"
+		></script>
+		<script type="text/javascript" src="js/main.js" defer="defer"></script>
+	</body>
 </html>

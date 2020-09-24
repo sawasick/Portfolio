@@ -1,0 +1,54 @@
+@import "variables";
+
+.title_bg--Contact {
+	@include tilt(skew(0deg, -10deg));
+}
+.title_name--Contact {
+	@include tilt(skew(0deg, 10deg));
+}
+.title_underline--Contact {
+	width: 330px;
+	@include tilt(skew(-40deg, 10deg));
+}
+.Contact_text {
+	width: 100vw;
+	text-align: center;
+	font-size: 30px;
+	font-weight: lighter;
+	margin: 60px auto 0 auto;
+	@media screen and (max-width: 480px) {
+		font-size: 25px;
+	}
+}
+.Contact_list {
+	margin: 0 auto;
+
+	tr {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 60px auto;
+	}
+	td {
+		@include img-contact(pc);
+		padding: 0;
+		@media screen and (max-width: 480px) {
+			@include img-contact(sp);
+		}
+	}
+	img {
+		@include img-contact(pc);
+		@media screen and (max-width: 480px) {
+			@include img-contact(sp);
+		}
+	}
+	p {
+		font-size: 30px;
+		font-weight: lighter;
+		font-style: italic;
+		margin-left: 5vw;
+		@media screen and (max-width: 480px) {
+			font-size: 20px;
+		}
+	}
+}

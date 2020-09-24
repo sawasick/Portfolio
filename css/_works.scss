@@ -1,0 +1,122 @@
+@import "variables";
+
+.title_bg--Works {
+	@include tilt(skew(0deg, -10deg));
+}
+.title_name--Works {
+	@include tilt(skew(0deg, 10deg));
+}
+.title_underline--Works {
+	@include tilt(skew(-40deg, 10deg));
+}
+.Works_category {
+	height: auto;
+	margin-top: 5%;
+
+	ul {
+		width: 100vw;
+		text-align: center;
+		margin: 0 auto;
+		padding: 0;
+	}
+	li {
+		display: inline;
+		font-size: 30px;
+		font-weight: normal;
+		margin: 0 2%;
+		@media screen and (max-width: 480px) {
+			margin: 0 20%;
+		}
+	}
+}
+.Works_work {
+	margin-top: 60px;
+	@media screen and (max-width: 480px) {
+		margin-top: 30px;
+	}
+
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 1110px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	li {
+		@include img-work(pc);
+		list-style: none;
+		margin: 20px 20px;
+		@media screen and (max-width: 480px) {
+			@include img-work(sp);
+			margin: 20px 10px 150px 10px;
+		}
+	}
+}
+.Works_work_tmb {
+	position: relative;
+	@include img-work(pc);
+	margin: 0;
+	@media screen and (max-width: 480px) {
+		@include img-work(sp);
+	}
+
+	img {
+		position: relative;
+		@include img-work(pc);
+		@media screen and (max-width: 480px) {
+			@include img-work(sp);
+		}
+	}
+	a {
+		position: absolute;
+		@include img-work(pc);
+		top: 0;
+		left: 0;
+		z-index: 10;
+		@media screen and (max-width: 480px) {
+			@include img-work(sp);
+		}
+	}
+}
+.Works_work_tmb_mask {
+	background-color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	@include img-work(pc);
+	top: 0;
+	left: 0;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	opacity: 0;
+	@media screen and (max-width: 480px) {
+		@include img-work(sp);
+		height: 130px;
+		top: 213px;
+		opacity: 1;
+	}
+
+	figcaption {
+		color: $baseColor;
+		padding-left: 20px;
+		@media screen and (max-width: 480px) {
+			padding-left: 10px;
+		}
+	}
+	h4 {
+		font-size: 180%;
+		font-weight: normal;
+		@media screen and (max-width: 480px) {
+			margin: 10px 0 0 0;
+		}
+	}
+	h5 {
+		font-size: 130%;
+		font-weight: lighter;
+		@media screen and (max-width: 480px) {
+			margin: 10px 0 0 0;
+		}
+	}
+}
+.choice:hover .Works_work_tmb_mask {
+	opacity: 1;
+}

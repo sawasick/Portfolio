@@ -1,0 +1,69 @@
+// color
+$baseColor: #ffffff;
+$mainColor: #ffff33;
+$accentColor: #ff3399;
+// セクションタイトルの背景
+$title-tilt-top: calc((20vh + 100vw * 0.176) / 2 - (100vw * 0.176 / 2));
+$title-tilt: calc((15vh + 100vw * 0.176) / 2 - (100vw * 0.176 / 2));
+
+// mixin
+//セクションタイトルの傾き
+@mixin tilt($deg) {
+	-webkit-transform: $deg;
+	transform: $deg;
+}
+// workサムネ画像サイズ
+@mixin img-work($media) {
+	@if $media == "pc" {
+		width: 330px;
+		height: 234px;
+	} @else if $media == "sp" {
+		width: 300px;
+		height: 213px;
+	} @else {
+	}
+}
+// スライド画像サイズ
+@mixin img-slide($media) {
+	@if $media == "pc" {
+		width: 710px;
+		height: 448px;
+	} @else if $media == "sp" {
+		width: 300px;
+		height: 186px;
+	} @else {
+	}
+}
+// プロフィール画像サイズ
+@mixin img-profile($media) {
+	@if $media == "pc" {
+		width: 366px;
+		height: 520px;
+	} @else if $media == "sp" {
+		width: 300px;
+		height: 426px;
+	} @else {
+	}
+}
+// スキルアイコン画像サイズ
+@mixin img-skill($media) {
+	@if $media == "pc" {
+		width: 200px;
+		height: 200px;
+	} @else if $media == "sp" {
+		width: 150px;
+		height: 150px;
+	} @else {
+	}
+}
+// コンタクトアイコン画像サイズ
+@mixin img-contact($media) {
+	@if $media == "pc" {
+		width: 120px;
+		height: 120px;
+	} @else if $media == "sp" {
+		width: 60px;
+		height: 60px;
+	} @else {
+	}
+}

@@ -1,0 +1,220 @@
+@import "variables";
+@import "common";
+
+.content-wrap {
+	background-color: $baseColor;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	margin: 0 auto;
+	padding: 0;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+	cursor: default;
+}
+.title_bg--work {
+	background-color: rgba($mainColor, 0.6);
+	position: absolute;
+	width: auto;
+	height: 20vh;
+	text-align: center;
+	top: calc((20vh + 100vw * 0.176) / 2 - #{$title-tilt-top});
+	left: 0;
+	right: 0;
+	margin-top: 0;
+	@include tilt(skew(0deg, -10deg));
+}
+.title_name--work {
+	display: inline-block;
+	font-size: 100px;
+	font-style: normal;
+	top: calc(#{$title-tilt-top} - 62px);
+	left: 0;
+	right: 0;
+	margin: 0;
+	opacity: 1;
+	@include tilt(skew(0deg, 10deg));
+	@media screen and (max-width: 959px) {
+		font-size: 80px;
+		top: calc(#{$title-tilt-top} - 50px);
+	}
+	@media screen and (max-width: 480px) {
+		font-size: 50px;
+		top: calc(#{$title-tilt-top} - 30px);
+	}
+}
+.title_underline--work {
+	background-color: rgba($accentColor, 0.6);
+	top: calc(#{$title-tilt-top} - 72px);
+	margin: -24px auto 0 auto;
+	opacity: 1;
+	@include tilt(skew(-40deg, 10deg));
+	@media screen and (max-width: 959px) {
+		top: calc(#{$title-tilt-top} - 50px);
+	}
+	@media screen and (max-width: 480px) {
+		top: calc(#{$title-tilt-top} - 30px);
+	}
+}
+.title_category {
+	color: $baseColor;
+	display: inline-block;
+	position: relative;
+	width: 500px;
+	letter-spacing: 1px;
+	top: calc(#{$title-tilt-top} - 50px);
+	left: 0;
+	right: 0;
+	margin: 0;
+	@include tilt(skew(0deg, 10deg));
+	@media screen and (max-width: 959px) {
+		top: calc(#{$title-tilt-top} - 20px);
+	}
+	@media screen and (max-width: 480px) {
+		width: 320px;
+		top: calc(#{$title-tilt-top} - 20px);
+	}
+
+	h3 {
+		background-color: rgba($accentColor, 0.6);
+		border-radius: 25px;
+		display: inline-block;
+		width: 220px;
+		font-size: 35px;
+		font-weight: lighter;
+		margin: 0 10px;
+		@media screen and (max-width: 480px) {
+			width: 170px;
+			font-size: 25px;
+			margin: 0 10px 5px 10px;
+		}
+	}
+}
+.detail {
+	position: relative;
+	width: 100vw;
+	text-align: center;
+	top: calc(25vh + (20vh + 100vw * 0.176) / 2 - #{$title-tilt-top});
+	margin: 0 auto;
+}
+.detail_desc {
+	display: inline-block;
+	width: 530px;
+	text-align: left;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 1.5;
+	margin: 60px 0 90px 0;
+	@media screen and (max-width: 480px) {
+		width: 300px;
+	}
+}
+.detail_link {
+	font-size: 30px;
+	font-weight: normal;
+	margin: 10px 0 0 0;
+}
+.detail_img-slide {
+	@include img-slide(pc);
+	margin: 60px auto 0 auto;
+	padding: 0;
+	@media screen and (max-width: 480px) {
+		@include img-slide(sp);
+	}
+}
+.detail_img-slide_image {
+	@include img-slide(pc);
+	margin: 0 auto;
+	@media screen and (max-width: 480px) {
+		@include img-slide(sp);
+	}
+}
+.slide-arrow {
+	position: absolute;
+	width: 45px;
+	height: 284px;
+	top: 77px;
+	cursor: pointer;
+}
+.prev-arrow {
+	left: -60px;
+}
+.next-arrow {
+	right: -60px;
+}
+.detail_data {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80vw;
+	line-height: 25px;
+	margin: 60px auto 0 auto;
+	@media screen and (max-width: 480px) {
+		width: 300px;
+		margin-bottom: 0;
+	}
+
+	p {
+		text-align: left;
+	}
+}
+.detail_data_skill {
+	height: 10%;
+	margin-right: 10%;
+	@media screen and (max-width: 480px) {
+		width: 300px;
+		margin: 0 0 10px 0;
+	}
+}
+.detail_data-name {
+	font-size: 25px;
+	margin: 0;
+}
+.detail_data-content {
+	font-size: 20px;
+	margin-top: 10px;
+}
+.detail_data_period {
+	height: 10%;
+	@media screen and (max-width: 480px) {
+		width: 300px;
+	}
+}
+
+/* workの個々の設定 */
+.underline--BalloonMail {
+	width: 580px;
+	@media screen and (max-width: 959px) {
+		width: 450px;
+	}
+	@media screen and (max-width: 480px) {
+		width: 280px;
+	}
+}
+.underline--GearLove {
+	width: 500px;
+	@media screen and (max-width: 959px) {
+		width: 400px;
+	}
+	@media screen and (max-width: 480px) {
+		width: 250px;
+	}
+}
+.underline--Pile {
+	width: 200px;
+	@media screen and (max-width: 959px) {
+		width: 150px;
+	}
+	@media screen and (max-width: 480px) {
+		width: 100px;
+	}
+}
+.underline--Hamburger-nomnom {
+	width: 950px;
+	@media screen and (max-width: 959px) {
+		width: 750px;
+	}
+	@media screen and (max-width: 480px) {
+		width: 300px;
+	}
+}

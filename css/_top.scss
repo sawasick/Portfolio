@@ -1,0 +1,68 @@
+@import "variables";
+
+#Top {
+	height: 100vh;
+}
+.Top_wrap {
+	position: absolute;
+	width: auto;
+	height: 20vh;
+	text-align: center;
+	top: calc(50vh - #{$title-tilt-top});
+	left: 0;
+	right: 0;
+	color: #000;
+	@include tilt(skew(0deg, 10deg));
+	animation: fadeInTitle 1s 1.2s forwards;
+
+	img {
+		position: absolute;
+		width: 100vw;
+		height: 20vh;
+		left: 0;
+		right: 0;
+	}
+}
+.TopCover {
+	all: initial;
+	background-color: #fff;
+	position: absolute;
+	width: 100vw;
+	height: 20vh;
+	top: 0;
+	left: 0;
+	animation: fadeInLtoR 0.8s 0.2s ease-out forwards;
+}
+.Top_name {
+	display: inline-block;
+	position: absolute;
+	font-size: 70px;
+	font-weight: normal;
+	top: calc(#{$title-tilt-top} - 42px);
+	left: 0;
+	right: 0;
+	margin: 0;
+	@include tilt(skew(0deg, -10deg));
+	opacity: 0;
+	animation: fadeInTitleText 1s 1.2s forwards;
+	@media screen and (max-width: 480px) {
+		font-size: 35px;
+	}
+}
+.Top_portfolio {
+	display: inline-block;
+	position: absolute;
+	font-size: 60px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	top: calc(#{$title-tilt-top} - 35.5px + 42.5px);
+	left: 0;
+	right: 0;
+	margin: 0 0 0 40%;
+	@include tilt(skew(0deg, -10deg));
+	opacity: 0;
+	animation: fadeInTitleText 1s 1.2s forwards;
+	@media screen and (max-width: 480px) {
+		font-size: 30px;
+	}
+}
