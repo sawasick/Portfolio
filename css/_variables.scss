@@ -59,11 +59,11 @@ $title-tilt: calc((15vh + 100vw * 0.176) / 2 - (100vw * 0.176 / 2));
 // コンタクトアイコン画像サイズ
 @mixin img-contact($media) {
 	@if $media == "pc" {
-		width: 120px;
-		height: 120px;
+		width: 150px;
+		height: 150px;
 	} @else if $media == "sp" {
-		width: 60px;
-		height: 60px;
+		width: 80px;
+		height: 80px;
 	} @else {
 	}
 }

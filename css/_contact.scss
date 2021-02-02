@@ -7,7 +7,6 @@
 	@include tilt(skew(0deg, 10deg));
 }
 .title_underline--Contact {
-	width: 330px;
 	@include tilt(skew(-40deg, 10deg));
 }
 .Contact_text {
@@ -21,19 +20,31 @@
 	}
 }
 .Contact_list {
-	margin: 0 auto;
+	margin: 0% auto 15% auto;
+	// padding: 0 20%;
+	@media screen and (max-width: 480px) {
+		// height: 240px;
+	}
 
 	tr {
 		display: flex;
+		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
+		width: 100%;
 		margin: 60px auto;
+		@media screen and (max-width: 480px) {
+			flex-direction: column;
+			margin: 0;
+		}
 	}
 	td {
 		@include img-contact(pc);
 		padding: 0;
+		margin: 0 46px;
 		@media screen and (max-width: 480px) {
 			@include img-contact(sp);
+			margin-bottom: 15%;
 		}
 	}
 	img {
