@@ -370,7 +370,7 @@ section {
   position: absolute;
   width: 45px;
   height: 284px;
-  top: 77px;
+  top: calc((448px - 284px) / 2);
   cursor: pointer;
 }
 

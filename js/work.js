@@ -36,5 +36,6 @@ if (document.URL.match('Pile')) {
 		//PC,TAB表示
 		$('.detail_img-slide').css({ height: '710px', width: '448px' });
 		$('.detail_img-slide_image').css({ height: '710px', width: '448px' });
+		$('.slide-arrow').css('top', 'calc((710px - 284px) / 2)');
 	}
 }

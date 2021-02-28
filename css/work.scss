@@ -1,5 +1,5 @@
-@import "variables";
-@import "common";
+@import 'variables';
+@import 'common';
 
 .content-wrap {
 	background-color: $baseColor;
@@ -133,7 +133,7 @@
 	position: absolute;
 	width: 45px;
 	height: 284px;
-	top: 77px;
+	top: calc((448px - 284px) / 2); //448pxはスライド画像のheight
 	cursor: pointer;
 }
 .prev-arrow {
