@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 .title_bg--About {
 	@include tilt(skew(0deg, 10deg));
@@ -43,6 +43,19 @@
 	font-size: 18px;
 	line-height: 300%;
 	margin: 0;
+}
+.About_profile_link {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+
+	a {
+		width: 20%;
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
 }
 .About_skills_wrap {
 	margin-top: 60px;
