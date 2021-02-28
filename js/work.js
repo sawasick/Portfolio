@@ -25,14 +25,11 @@ if (window.innerWidth <= 959) {
 // SP→縦300px,横185px
 // に変更する
 if (document.URL.match('Pile')) {
-	console.log(window.innerWidth);
 	if (window.innerWidth < 480) {
-		console.log('SPOK');
 		//SP表示
 		$('.detail_img-slide').css({ height: '484px', width: '300px' });
 		$('.detail_img-slide_image').css({ height: '484px', width: '300px' });
 	} else {
-		console.log('PCOK');
 		//PC,TAB表示
 		$('.detail_img-slide').css({ height: '710px', width: '448px' });
 		$('.detail_img-slide_image').css({ height: '710px', width: '448px' });
